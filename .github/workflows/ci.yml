@@ -1,5 +1,7 @@
 name: ci
 
+
+
 on:
   pull_request:
     branches: [main]
@@ -18,5 +20,5 @@ jobs:
         with:
           node-version: 22
 
-      - name: Force Failure
-        run: (exit 1)
+      - name: Checking Node Version
+        run: node --version
